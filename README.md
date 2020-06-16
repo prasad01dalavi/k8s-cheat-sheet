@@ -2,9 +2,13 @@
 Kubernetes Commands for my reference 
 
 ```
-kubectl get nodes 
+kubectl get nodes
+kubectl describe nodes
 
-kubectl get pods  
+kubectl run <pod_name> --image=<docker_image>   # Deploy Pod in Node
+kubectl get pods                                # Get list of Pods in a Cluster
+kubectl describe pods                           # Details of Pods 
+kubectl get pods -o wide                        # Two extra field like POD IP and Node Name
 
 kubectl get services
 
