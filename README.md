@@ -17,6 +17,8 @@ kubectl get replicaset                          # Latest Notation
 
 kubectl replace -f resource-definition.yml      # Update the existing resource with new definitions in yaml file
 
+kubectl get all                                 # Get all details of deployment
+
 kubectl run <cluster_name> --image <image_name>                               # Start a single instance
 [--env="key=value"] [--port=port] [--replicas=replicas]                       # Optional parameters
 
