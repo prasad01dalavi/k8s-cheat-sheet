@@ -29,7 +29,8 @@ kubectl get all                                 # Get all details of deployment
 kubectl rollout status <deployment_name>        # Status of the roll out process
 kubectl rollout history <deployment_name>       # Shows revisions and history of deployment
 kubectl rollout undo <deployment_name>          # Rollback the updates
-  
+
+kubectl get services                            # Get servies contains cluster IP and external IP, PORTS 
 kubectl run <cluster_name> --image <image_name>                               # Start a single instance
 [--env="key=value"] [--port=port] [--replicas=replicas]                       # Optional parameters
 
